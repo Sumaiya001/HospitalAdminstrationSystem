@@ -1,9 +1,9 @@
-package HospitalManagementSystem;
+package HospitalAdministrationSystem;
 
 import java.sql.*;
 import java.util.Scanner;
 
-public class HospitalManagementSystem {
+public class HospitalAdministrationSystem {
     private static final String url = "jdbc:mysql://localhost:3306/hospital";
     private static final String username = "root";
     private static final String password = "Admin@123";
@@ -20,7 +20,7 @@ public class HospitalManagementSystem {
             Patient patient = new Patient(connection, scanner);
             Doctor doctor = new Doctor(connection);
             while(true){
-                System.out.println("HOSPITAL MANAGEMENT SYSTEM ");
+                System.out.println("HOSPITAL ADMINISTRATION SYSTEM ");
                 System.out.println("1. Add Patient");
                 System.out.println("2. View Patients");
                 System.out.println("3. View Doctors");
@@ -51,7 +51,7 @@ public class HospitalManagementSystem {
                         System.out.println();
                         break;
                     case 5:
-                        System.out.println("THANK YOU! FOR USING HOSPITAL MANAGEMENT SYSTEM!!");
+                        System.out.println("THANK YOU! FOR USING HOSPITAL ADMNISTRATION SYSTEM!!");
                         return;
                     default:
                         System.out.println("Enter valid choice!!!");
